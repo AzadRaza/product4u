@@ -3936,17 +3936,17 @@ const ratingInput = document.getElementById('fb-rating');
 
 let currentRating = 0;
 
-3928 function updateStars(rating) {
-3929     stars.forEach((star) => {
-3930         const value = Number(star.dataset.value);
+ function updateStars(rating) {
+     stars.forEach((star) => {
+        const value = Number(star.dataset.value);
 
-3932         if (value <= rating) {
-3933             star.classList.add('active');
-3934         } else {
-3935             star.classList.remove('active');
-3936         }
-3937     });
-3938 }
+        if (value <= rating) {
+             star.classList.add('active');
+        } else {
+           star.classList.remove('active');
+         }
+   });
+ }
 
 stars.forEach((star) => {
 
